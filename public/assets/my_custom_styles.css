@@ -16,3 +16,12 @@ body {
   padding-top: 150px;
   padding-bottom: 150px;
 }
+
+.download-hero {
+  background: url("images/download-hero.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.store-badge {
+  width: 200px;
+}
