@@ -18,52 +18,71 @@
 
   <!-- Make it responsive to small screens -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  </head>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">FOODHUB</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-    </ul>
-
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="https://www.google.com">Sign In </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.google.com">
-          <i class="fa fa-shopping-bag fa-lg"></i>
-      </li>
-    </ul>
-  </div>
-</nav>
+  
+  <!-- load Google web fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Passion+One:wght@400&display=swap" rel="stylesheet">
+  
+  <link href="/assets/my_custom_styles.css" rel="stylesheet">
+</head>
 
 <body>
-  <h2>
-    Who delivers in your neighborhood?
-  </h2>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-danger">
+    <a class="navbar-brand" href="https://google.com">
+      <span class="h2 font-weight-bold">FOODHUB
+    </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <form>
-    <div>
-      <label for="zebra">
-        Enter your address below.
-      </label>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
 
-      <div>
-        <i class="fa fa-map-marker"></i>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://www.google.com">Sign In </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://www.google.com">
+              <i class="fa fa-shopping-bag fa-lg"></i>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-        <input id='zebra' type="text" placeholder="Street address, city, state">
+  <div class="container-fluid who-delivers py-6">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 text-white">
+        <h2 class="font-weight-bold">
+          Who delivers in your neighborhood?
+        </h2>
+
+        <form>
+          <div class="form-group">
+            <label for="zebra">
+              Enter your address below.
+            </label>
+
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-map-marker"></i>
+                </span>
+              </div>
+
+              <input class="form-control" id='zebra' type="text" placeholder="Street address, city, state">
+            </div>
+          </div>
+
+          <button class="btn btn-primary btn-block">
+            Find Food
+          </button>
+        </form>
       </div>
     </div>
+  </div>
 
-    <button>
-      Find Food
-    </button>
-  </form>
 
   <h2>
     How to Foodhub
